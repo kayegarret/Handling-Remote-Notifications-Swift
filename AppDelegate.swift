@@ -23,12 +23,12 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
                     if let title = alert["title"] as? NSString {
                         
                         // Collect notification title text here if it exists
-                        var notificationTitle = alert["title"]!
+                        var notificationTitle = title
                     }
                     if let body = alert["body"] as? NSString {
                             
                         // Collect notification body text here if it exists
-                        var notificationBody = alert["body"]!
+                        var notificationBody = alert
                         
                     }
                     
@@ -36,13 +36,13 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
                 else if let alert = aps["alert"] as? NSString {
                     
                     // Alert is a NSString, collect it here
-                    var alertText = aps["alert"]!
+                    var alertText = alert
                 }
                 
                 if let catagory = aps["catagory"] as? NSString {
                 
                   // Collect notification title text here if it exists
-                  var notificationCatagory = aps["catagory"]!
+                  var notificationCatagory = catagory
                         
                   // Depending on the catagory, you may want to take the user to a certain part of your app if you wish right here
                   
@@ -78,12 +78,12 @@ func application(_ application: UIApplication, didReceiveRemoteNotification user
                     if let title = alert["title"] as? NSString {
                         
                         // Collect notification title text here if it exists
-                        var notificationTitle = alert["title"]!
+                        var notificationTitle = title
                     }
                     if let body = alert["body"] as? NSString {
                             
                         // Collect notification body text here if it exists
-                        var notificationBody = alert["body"]!
+                        var notificationBody = body
                         
                     }
                     
@@ -91,13 +91,13 @@ func application(_ application: UIApplication, didReceiveRemoteNotification user
                 else if let alert = aps["alert"] as? NSString {
                     
                     // Alert is a NSString, collect it here
-                    var alertText = aps["alert"]!
+                    var alertText = alert
                 }
                 
                 if let catagory = aps["catagory"] as? NSString {
                 
                   // Collect notification title text here if it exists
-                  var notificationCatagory = aps["catagory"]!
+                  var notificationCatagory = catagory
                         
                   // Depending on the catagory, you may want to take the user to a certain part of your app if you wish right here
                   
@@ -129,12 +129,12 @@ func application(_ application: UIApplication, didReceiveRemoteNotification user
                     if let title = alert["title"] as? NSString {
                         
                         // Collect notification title text here if it exists
-                        var notificationTitle = alert["title"]!
+                        var notificationTitle = title
                     }
                     if let body = alert["body"] as? NSString {
                             
                         // Collect notification body text here if it exists
-                        var notificationBody = alert["body"]!
+                        var notificationBody = body
                         
                     }
                     
@@ -142,13 +142,13 @@ func application(_ application: UIApplication, didReceiveRemoteNotification user
                 else if let alert = aps["alert"] as? NSString {
                     
                     // Alert is a NSString, collect it here
-                    var alertText = aps["alert"]!
+                    var alertText = alert
                 }
                 
                 if let catagory = aps["catagory"] as? NSString {
                 
                   // Collect notification title text here if it exists
-                  var notificationCatagory = aps["catagory"]!
+                  var notificationCatagory = catagory
                         
                   // Depending on the catagory, you may want to take the user to a certain part of your app if you wish right here
                   
